@@ -216,11 +216,11 @@ static struct led_info pm8921_led_info[] = {
 	},
 	[1] = {
 		.name = "green",
-		.default_trigger = "battery-full",
+		.default_trigger = "none",
 	},
 	[2] = {
 		.name = "blue",
-		.default_trigger = "touchwake",
+		.default_trigger = "none",
 	},
 };
 
