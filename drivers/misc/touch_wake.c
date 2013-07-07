@@ -24,7 +24,7 @@
 #define TIME_LONGPRESS		(500)
 #define POWERPRESS_DELAY	(40)
 #define POWERPRESS_TIMEOUT	(1000)
-#define DEF_TOUCHOFF_DELAY	(45000);
+#define DEF_TOUCHOFF_DELAY	(11000);
 
 static struct input_dev *powerkey_device;
 static struct wake_lock touchwake_wake_lock;
@@ -277,7 +277,7 @@ static int __init touchwake_control_init(void)
 {
 	int ret;
 
-	touchwake_enabled = false;
+	touchwake_enabled = true;
 	touch_disabled = false;
 	device_suspended = false;
 	timed_out = true;
