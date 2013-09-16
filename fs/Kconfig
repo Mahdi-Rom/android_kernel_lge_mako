@@ -295,7 +295,7 @@ config RESTRICT_ROOTFS_SLAVE
     mount system-wide volumes.
 
     This option restricts rootfs-slave calls to /storage (and
-   /mnt/shell/emulated) so that Dalvik apps can mount system-wide volumes
+    /mnt/shell/emulated) so that Dalvik apps can mount system-wide volumes
     elsewhere (with appropriate permission, as in earlier versions of Android),
     while retaining full multi-user storage compatibility.  It is made
     available as a kernel-based workaround for instances where libdvm can not
