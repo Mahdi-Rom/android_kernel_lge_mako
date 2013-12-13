@@ -2445,4 +2445,3 @@ radeon_add_atom_encoder(struct drm_device *dev,
 		break;
 	}
 }
-
