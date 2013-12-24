@@ -290,8 +290,8 @@ static int __init touchwake_control_init(void)
 {
 	int ret;
 
-	touchwake_enabled = true;
-	touch_disabled = false;
+	touchwake_enabled = false;
+	touch_disabled = true;
 	device_suspended = false;
 	timed_out = true;
 	touchoff_delay = DEF_TOUCHOFF_DELAY;
