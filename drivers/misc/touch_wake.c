@@ -88,8 +88,7 @@ static void touchwake_late_resume(struct early_suspend *h)
 	if (!touchwake_enabled)
 		goto out;
 
-	cancel_delayed_work(&touchoff_work);
-	flush_scheduled_work();
+	cancel_delayed_work_sync(&touchoff_work);
 
 	wake_unlock(&touchwake_wake_lock);
 
